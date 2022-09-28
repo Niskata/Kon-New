@@ -10,7 +10,6 @@ const defaultMenu = {
 │ Time: *%time*
 │
 │ Uptime: *%uptime*
-│ Github: %github
 │
 ╰─────〔 *%me* 〕
 `.trimStart(),
@@ -113,7 +112,6 @@ ${'```%npmdesc```'}
         npmname: package.name,
         npmdesc: package.description,
         version: package.version,
-        github: package.homepage ? package.homepage.url || package.homepage : '[unknown github url]',
         name, time, date, totalreg, readmore: readMore
       }
       pesen = pesen.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join('|')})`, 'g'), (_, name) => '' + replace[name])

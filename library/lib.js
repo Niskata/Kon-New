@@ -1765,7 +1765,7 @@ function jooxLyric(id) {
           const res = JSON.parse(data.replace("MusicJsonCallback(", "").replace("\n)", ""));
           if (res.code !== 0) return resolve({status: false})
           const lir = Buffer.from(res.lyric, "base64").toString("utf8");
-          const lirik = lir.replace(/[[0-9]+\:[0-9]+\.[0-9]+\]/g, "").replace(/\n(\*\*\*(.)+\*\*\*)/g, "\n\n***By anubisbot-MD***");
+          const lirik = lir.replace(/[[0-9]+\:[0-9]+\.[0-9]+\]/g, "").replace(/\n(\*\*\*(.)+\*\*\*)/g, "\n\n***By Kon ~Bot***");
           resolve({status: true, anubis: lirik})
       })
   })
