@@ -30,7 +30,7 @@ global.anuCookie = {
     joox: '', // joox cookies
     soundcloud: 'iZIs9mchVcX5lhVRyQGGAYlNPVldzAoX', //soundcloud client_id
 }
-global.pingWeb = 'anuwapay.herokuapp.com' 
+global.pingWeb = 'kon-md.herokuapp.com' 
 global.anuFooter = 'made with ❤️ by Niskata' //footer text
 global.packname = '❤️ by Niskata' // exif sticker package name
 global.author = '6285801284666 • Kon-Bot' //exif sticker author
